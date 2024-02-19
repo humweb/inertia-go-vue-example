@@ -1,11 +1,6 @@
 import { createApp, h } from "vue";
 import { createInertiaApp, Link, Head} from "@inertiajs/vue3";
-import {
-    vTooltip,
-} from 'floating-vue'
 import "./css/app.css"
-import 'floating-vue/dist/style.css'
-import store from '@/store'
 
 createInertiaApp({
     resolve: name => {
@@ -19,8 +14,6 @@ createInertiaApp({
         .use(plugin)
         .component("Link", Link)
         .component("Head", Head)
-        .directive('tooltip', vTooltip)
-        .provide('store', store)
         .mount(el);
         // app.config.performance = true;
     }

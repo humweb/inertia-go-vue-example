@@ -3,12 +3,10 @@ import {Link} from '@inertiajs/vue3'
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue'
 import {Bars3Icon, BellIcon, FireIcon, UserIcon, XMarkIcon} from '@heroicons/vue/24/outline'
 
-import {Dropdown, DropdownItem} from "@/components/Dropdown/index.js";
-
 </script>
 
 <script>
-import {navigation, notifications, userNavigation} from "@/store/navigation.js";
+import {navigation} from "@/store/navigation.js";
 
 export default {
   props: {
@@ -24,9 +22,7 @@ export default {
   data() {
     return {
       user: {},
-      navigation,
-      notifications,
-      userNavigation
+      navigation
     }
   },
   methods: {

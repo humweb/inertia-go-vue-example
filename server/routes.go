@@ -24,6 +24,7 @@ func BindRoutes(s *Server) *chi.Mux {
 
 		r.Group(func(r chi.Router) {
 			r.Get("/users", usr.HandleGetUsers)
+			r.Get("/about", hr.HandleAbout)
 
 			r.Get("/", hr.HandleIndex)
 		})

@@ -21,6 +21,11 @@ func (h HomeHandler) HandleIndex(w http.ResponseWriter, r *http.Request) {
 	h.App.Inertia.Render(w, r, "Index", inertia.Props{})
 }
 
+func (h HomeHandler) HandleAbout(w http.ResponseWriter, r *http.Request) {
+
+	h.App.Inertia.Render(w, r, "About", inertia.Props{})
+}
+
 type UsersHandler struct {
 	App *Server
 }
