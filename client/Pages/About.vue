@@ -1,6 +1,17 @@
 <template>
     <Layout>
-        <h1>Another page!</h1>
+      <template #header>
+        <div class="flex w-full justify-between">
+          <h2 class="text-gray-800 leading-tight">
+            About
+          </h2>
+        </div>
+      </template>
+      <div class="card">
+        <div class="card-body">
+          Another example of about this page
+        </div>
+      </div>
     </Layout>
 </template>
 

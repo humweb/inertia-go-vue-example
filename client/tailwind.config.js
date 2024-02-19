@@ -10,7 +10,6 @@ export default {
     './node_modules/inertia-vue-table/**/*.vue',
     './node_modules/inertia-vue-table/**/*.js',
   ],
-  darkMode:  'class',
   theme: {
     extend: {
       fontFamily: {

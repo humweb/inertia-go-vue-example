@@ -40,7 +40,6 @@ export default {
             :records="records"
             :pagination="pagination"
             v-model="tableData"
-
             class="text-base mb-0"
         />
 

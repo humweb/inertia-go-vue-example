@@ -1,6 +1,5 @@
 <script setup>
-import {BuildingLibraryIcon, Cog6ToothIcon, EllipsisVerticalIcon, Squares2X2Icon} from '@heroicons/vue/20/solid'
-import {Dropdown, DropdownItem} from "@/components/Dropdown/index.js";
+import {BuildingLibraryIcon} from '@heroicons/vue/20/solid'
 import Layout from "@/Layouts/Base.vue";
 </script>
 <script>
@@ -11,81 +10,31 @@ export default {
     return {
       boxes: [
         {
-          title: 'School News',
+          title: 'Latest News',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique.',
           bgColorClass: 'bg-green-600'
         }, {
-          title: 'Upcomming Events',
+          title: 'Upcoming Events',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique.',
           bgColorClass: 'bg-blue-600'
-        }, {
-          title: 'Notes',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique.',
-          bgColorClass: 'bg-orange-600'
-        },
+        }
       ],
-      work: [{
-        id: 1,
-        title: 'ELA Lessons',
-        initials: 'ELA',
-        lessons: 4,
-        bgColorClass: 'bg-green-600',
-      },
-        {
-          id: 1,
-          title: 'ELA Assessment',
-          initials: 'EA',
-          lessons: 4,
-          bgColorClass: 'bg-orange-600',
-        },
-        {
-          id: 1,
-          title: 'MATH Lessons',
-          initials: 'ME',
-          lessons: 3,
-          bgColorClass: 'bg-blue-600',
-        },
-        {
-          id: 1,
-          title: 'MATH Assessments',
-          initials: 'MA',
-          lessons: 1,
-          bgColorClass: 'bg-yellow-400',
-        },
-      ],
-      activity: [
-        {activity: "Started DORA assessment", date: '02/10/2024', progress: 75},
-        {activity: "Finished ADAM assessment", date: '02/02/2024', progress: 50},
-        {activity: "Finished Multiplying single digit numbers lesson", date: '01/02/2024', progress: 100},
-        {activity: "Started ADAM assessment", date: '01/30/2024', progress: 0},
-      ],
-      layouts: {
-        stacked: {label: 'Stacked Layout'},
-        sidebar: {label: 'Sidebar Layout'},
-        sidebarStatic: {label: 'Sidebar Static Layout'},
-      },
-      currentLayout: 'stacked',
+
     }
   },
   methods: {
-    selectLayout(key) {
-      this.currentLayout = key
-    }
   },
   computed: {
-    breadcrumbs() {
-      return [{label: 'Student Dashboard'}]
-    }
   }
 }
 </script>
 <template>
-  <Layout :layout="currentLayout">
+  <Layout>
     <template #header>
       <div class="flex w-full justify-between">
-      <h2 class="text-gray-800 leading-tight">
-Home
-      </h2>
+        <h2 class="text-gray-800 leading-tight">
+          Home
+        </h2>
       </div>
     </template>
 

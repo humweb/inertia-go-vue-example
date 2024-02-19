@@ -1,8 +1,7 @@
 <script setup>
 import {Link} from '@inertiajs/vue3'
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue'
-import {Bars3Icon, BellIcon, FireIcon, UserIcon, XMarkIcon} from '@heroicons/vue/24/outline'
-
+import {Bars3Icon, FireIcon, XMarkIcon} from '@heroicons/vue/24/outline'
 </script>
 
 <script>
@@ -26,9 +25,6 @@ export default {
     }
   },
   methods: {
-    logout() {
-      alert('Logout not setup');
-    },
     isUrl(...urls) {
       let currentUrl = this.$page.url.substr(1)
       if (urls[0] === '') {
