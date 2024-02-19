@@ -1,4 +1,4 @@
-# Inertia + Go + Vue Tables Example
+# Inertia + Go + Tailwind + Vue Tables Example 
 
 This template should help get you started developing with Inertia Go Vue 3 in Vite.
 
