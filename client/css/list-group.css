@@ -1,0 +1,38 @@
+/*
+* ============================
+* List Groups
+*=============================
+*/
+
+.list-group {
+    @apply flex flex-col p-0 mb-0;
+}
+
+.list-group-item {
+    margin-bottom: -1px;
+    @apply relative block py-3 px-5 bg-white border border-gray-300;
+}
+
+.list-group-item:first-child {
+    @apply rounded-t;
+}
+
+.list-group-item:last-child {
+    @apply mb-0 rounded-b;
+}
+
+.list-group-item.disabled, .list-group-item:disabled {
+    @apply text-gray-600 bg-white pointer-events-none
+}
+
+.list-group-item-action {
+    @apply w-full text-gray-900;
+}
+
+.list-group-item-action:hover {
+    @apply text-gray-900 bg-gray-100;
+}
+
+.list-group-item.active {
+    @apply text-white bg-blue-600 z-10;
+}

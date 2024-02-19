@@ -1,0 +1,29 @@
+/*
+* ============================
+* Alerts
+*=============================
+*/
+
+.alert {
+    @apply relative flex w-full px-5 py-3 mb-4 rounded-lg ;
+}
+
+.alert-primary, .alert-info {
+    @apply text-blue-50 bg-blue-500 dark:bg-blue-900 dark:text-blue-200 ;
+}
+
+.alert-secondary {
+    @apply text-gray-50 bg-gray-600 dark:bg-gray-800 dark:text-gray-200;
+}
+
+.alert-success {
+    @apply text-white bg-green-500 dark:bg-green-700 dark:text-green-50;
+}
+
+.alert-danger {
+    @apply text-white bg-red-500 dark:bg-red-900 dark:text-red-100;
+}
+
+.alert-warning {
+    @apply text-white bg-orange-500 dark:bg-orange-800 dark:text-gray-100;
+}

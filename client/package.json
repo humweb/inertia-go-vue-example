@@ -1,0 +1,37 @@
+{
+  "name": "go-inertia",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest"
+  },
+  "dependencies": {
+    "@inertiajs/vue3": "^1.0.14",
+    "@popperjs/core": "^2.11.8",
+    "floating-vue": "^5.2.2",
+    "inertia-vue-table": "^2.0",
+    "vue": "^3.4.18"
+  },
+  "devDependencies": {
+    "@headlessui/vue": "^1.7.17",
+    "@heroicons/vue": "^2.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "color": "^4.2.3",
+    "dayjs": "^1.11.10",
+    "inertia-vue-table": "^2.0.1",
+    "inter-ui": "^4.0.1",
+    "jsdom": "^24.0.0",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^8.1.0",
+    "postcss-preset-env": "^9.3.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.11"
+  }
+}

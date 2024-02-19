@@ -1,0 +1,50 @@
+.form-label {
+    @apply mb-2 block text-gray-700 dark:text-gray-200 select-none;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    @apply leading-normal block w-full border-gray-300 text-gray-700 bg-white font-sans rounded text-left appearance-none relative focus:border-indigo-400 focus:ring dark:text-gray-400 dark:bg-gray-900 dark:border-transparent;
+    padding: 0.625rem 0.5rem;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder,
+.form-select::placeholder {
+    @apply text-gray-500 opacity-100;
+}
+
+.form-select {
+    @apply pr-10;
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAABGdBTUEAALGPC/xhBQAAAQtJREFUOBG1lEEOgjAQRalbGj2OG9caOACn4ALGtfEuHACiazceR1PWOH/CNA3aMiTaBDpt/7zPdBKy7M/DCL9pGkvxxVp7KsvyJftL5rZt1865M+Ucq6pyyF3hNcI7Cuu+728QYn/JQA5yKaempxuZmQngOwEaYx55nu+1lQh8GIatMGi+01NwBcEmhxBqK4nAPZJ78K0KKFAJmR3oPp8+Iwgob0Oa6+TLoeCvRx+mTUYf/FVBGTPRwDkfLxnaSrRwcH0FWhNOmrkWYbE2XEicqgSa1J0LQ+aPCuQgZiLnwewbGuz5MGoAhcIkCQcjaTBjMgtXGURMVHC1wcQEy0J+Zlj8bKAnY1/UzDe2dbAVqfXn6wAAAABJRU5ErkJggg==');
+    background-size: 0.7rem;
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+}
+.form-select::-ms-expand {
+    @apply opacity-0;
+}
+
+.form-input.error,
+.form-textarea.error,
+.form-select.error {
+    @apply border-red-500 focus:ring focus:ring-red-200;
+}
+
+.form-error {
+    @apply text-red-700 mt-2 text-sm;
+}
+
+/**
+ * Webkit workarounds
+ */
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+::-webkit-calendar-picker-indicator {
+    @apply dark:invert;
+}

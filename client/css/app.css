@@ -1,0 +1,22 @@
+/* Reset */
+@import 'tailwindcss/base';
+@import 'reset';
+
+/* Components */
+@import 'tailwindcss/components';
+@import 'alerts';
+@import 'buttons';
+@import 'card';
+@import 'dropdown';
+@import 'form';
+@import 'list-group';
+@import 'modal';
+@import 'table';
+
+/* Utilities */
+@import 'tailwindcss/utilities';
+
+
+.logo {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-violet-500
+}

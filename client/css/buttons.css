@@ -1,0 +1,54 @@
+a {
+    @apply hover:cursor-pointer
+}
+.btn {
+    @apply items-center bg-slate-500 text-white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25;
+    white-space: nowrap;
+    padding: 0.70em 1em;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.btn-spinner,
+.btn-spinner:after {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-spinner {
+    margin-right: 1rem;
+    display: inline-flex;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 0.2em solid #fff;
+    border-right: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    border-left: 0.2em solid transparent;
+    transform: translateZ(0);
+    animation: spinning 1s infinite linear;
+}
+
+.btn-group .btn:not(:first-child) {
+    @apply -ml-px rounded-l-none;
+}
+
+.btn-group .btn:not(:last-child) {
+    @apply rounded-r-none;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
