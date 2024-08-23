@@ -1,6 +1,6 @@
-# Inertia + Go + Tailwind + Vue Tables Example 
+# Inertia + Go + Tailwind + Vue + Vue Tables Example 
 
-This template should help get you started developing with Inertia Go Vue 3 in Vite.
+This template should help get you started developing with Inertia with Go adapter running Vue 3 in Vite.
 
 **Packages**
  * [Go Inertia](https://humweb.github.io/inertia-go-docs/)
@@ -8,16 +8,15 @@ This template should help get you started developing with Inertia Go Vue 3 in Vi
 
 ## Project Setup
 
-Default server config listens on `localhost:8080`
+Default server config listens on `localhost:8033`
 ```sh
 go mod tidy
 air
 ```
 
-### Compile and Hot-Reload for Development
+### Compile and Hot-Reload for Vue Development
 
 ```sh
-cd client
-npm install
+cd client && npm install
 npm run dev
 ```

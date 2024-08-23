@@ -17,6 +17,10 @@ export default {
           title: 'Upcoming Events',
           text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique.',
           bgColorClass: 'bg-blue-600'
+        }, {
+          title: 'Trending Articles',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit duis tristique.',
+          bgColorClass: 'bg-yellow-600'
         }
       ],
 
@@ -32,7 +36,7 @@ export default {
   <Layout>
     <template #header>
       <div class="flex w-full justify-between">
-        <h2 class="text-gray-800 leading-tight">
+        <h2 class="leading-tight">
           Home
         </h2>
       </div>

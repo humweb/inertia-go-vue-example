@@ -2,7 +2,7 @@
     <Layout>
       <template #header>
         <div class="flex w-full justify-between">
-          <h2 class="text-gray-800 leading-tight">
+          <h2 class="leading-tight">
             About
           </h2>
         </div>
